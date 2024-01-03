@@ -1,0 +1,147 @@
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    background-image: url("https://i.pinimg.com/564x/80/dc/03/80dc0358ce4f2cd806aa34c087161621.jpg"); /* Replace 'your-image-url.jpg' with the URL of your background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 100px;
+    height: 70px;
+    margin-left: 10px; /* Adjust margin as needed */
+}
+
+nav {
+    text-align: right;
+    padding: 0.5em 1em;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+nav a:not(:last-child) {
+    border-right: 1px solid #ddd;
+    padding-right: 10px;
+}
+
+.user-actions {
+    text-align: right;
+    padding: 70px 10px 0 0; /* Adjust padding as needed */
+    position: absolute;
+    top: 1;
+    right: 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#signup-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#login-button {
+    background-color: #000;
+    color: white;
+}
+
+section {
+    text-align: center;
+    padding: 2em;
+    margin-top: 120px;
+}
+
+h2 {
+    color: #555;
+}
+
+p {
+    color: #555;
+}
+
+.search-bar {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+button.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional styles for the bottom navigation bar */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    text-align: left;
+    padding: 0.5em 1em;
+}
+
+.bottom-nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Additional styles for the active link in the top navigation bar */
+nav a.active {
+    font-weight: bold;
+    color: #4CAF50;
+}

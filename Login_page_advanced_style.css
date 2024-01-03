@@ -1,0 +1,53 @@
+.login-signup-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.login,
+.signup {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+    background-color: #e8e8e8;
+    font-size: 20px;
+}
+
+.login:hover,
+.signup:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.login h2,
+.signup h2 {
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}

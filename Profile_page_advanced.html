@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Main_page_advanced_style.css">
+    <link rel="stylesheet" href="Profile_page_advanced_style.css">
+
+    <title>Gym Buddy</title>
+</head>
+<body>
+
+    <header>
+        <!-- Logo -->
+        <img src="https://us.123rf.com/450wm/mrshamsjaman/mrshamsjaman2009/mrshamsjaman200900437/154442898-initial-letter-gb-logo-or-bg-logo-vector-design-template.jpg?ver=6" alt="Gym Buddy Logo" class="logo">
+
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="#" onclick="redirectToHome()" class="active">Home</a>
+            <a href="#" onclick="redirectToProfile()">My Profile</a>
+            <a href="#" onclick="redirectToBuddy()">Find a Buddy</a>
+            <a href="#" onclick="redirectToMessage()">Message</a>
+        </nav>
+
+        <!-- Sign Up / Login buttons -->
+        <div class="user-actions">
+            <button id="signup-button" onclick="redirectToSignUp()">Sign Up</button>
+            <button id="login-button" onclick="redirectToLogin()">Login</button>
+        </div>
+    </header>
+
+    <div class="user-profile-section">
+        <h2>User Profile</h2>
+        <div class="profile-info">
+            <img src="https://t3.ftcdn.net/jpg/02/58/89/90/360_F_258899001_68CalsKTRk6PZQgWH9JhR4heBlncCko9.jpg" alt="User Photo">
+            <div class="personal-details">
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Date of Birth:</strong> January 1, 1990</p>
+                <p><strong>Hobbies:</strong> Reading, Traveling, Coding</p>
+                <p><strong>Email:</strong> john.doe@example.com</p>
+                <p><strong>Cellphone:</strong> +1 (555) 123-4567</p>
+                <p><strong>Username:</strong> johndoe</p>
+            </div>
+        </div>
+    
+        <div class="schedule-chart">
+            <h2>Weekly Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Schedule</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>
+                            <ul>
+                                <li>12:00am - 1:00am</li>
+                                <li>1:00am - 2:00am</li>
+                                <!-- ... Repeat for other hours -->
+                            </ul>
+                        </td>
+                    </tr>
+                    <!-- ... Repeat for other days of the week -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Gym Buddy. All rights reserved.</p>
+    </footer>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="bottom-nav">
+        <a href="#" onclick="redirectToAboutUs()">About Us</a>
+        <a href="#" onclick="redirectToServices()">Our Services</a>
+        <a href="#" onclick="redirectToContact()">Contact</a>
+    </div>
+
+    <script>
+        // JavaScript function to handle redirection to home page
+        function redirectToHome() {
+         window.location.href = 'Main_page_advanced.html'; // Replace 'home.html' with the actual URL you want to redirect to
+        }
+
+        // JavaScript function to handle redirection to profile page
+        function redirectToProfile() {
+            window.location.href = 'Profile_page_Advanced.html'; // Replace 'profile.html' with the actual URL you want to redirect to
+        }
+
+        // JavaScript function to handle redirection to buddy page
+        function redirectToBuddy() {
+            window.location.href = 'buddy.html'; // Replace 'buddy.html' with the actual URL you want to redirect to
+        }
+
+        // JavaScript function to handle redirection to message page
+        function redirectToMessage() {
+            window.location.href = 'message.html'; // Replace 'message.html' with the actual URL you want to redirect to
+        }
+
+        // JavaScript function to handle redirection to signup page
+        function redirectToSignUp() {
+            window.location.href = 'Register_page_advanced.html'; // Replace 'signup.html' with the actual URL you want to redirect to
+        }
+
+        // JavaScript function to handle redirection to login page
+        function redirectToLogin() {
+            window.location.href = 'Login_page_advanced.html'; // Replace 'login.html' with the actual URL you want to redirect to
+        }
+
+        // JavaScript function to handle redirection to workouts page
+        function redirectToWorkouts() {
+            window.location.href = 'workouts.html'; // Replace 'workouts.html' with the actual URL you want to redirect to
+        }
+
+        // JavaScript function to handle redirection to About Us page
+        function redirectToAboutUs() {
+            window.location.href = 'aboutus.html'; // Create a new HTML file for About Us content
+        }
+
+        // JavaScript function to handle redirection to Services page
+        function redirectToServices() {
+            window.location.href = 'services.html'; // Create a new HTML file for Services content
+        }
+
+        // JavaScript function to handle redirection to Contact page
+        function redirectToContact() {
+            window.location.href = 'contact.html'; // Create a new HTML file for Contact content
+        }
+
+        // JavaScript function to handle searching for gyms
+        function searchForGyms() {
+            var searchQuery = document.getElementById('searchQuery').value;
+            // Implement your search functionality using the searchQuery
+            alert('Searching for gyms with query: ' + searchQuery);
+        }
+    </script>
+
+</body>
+</html>
